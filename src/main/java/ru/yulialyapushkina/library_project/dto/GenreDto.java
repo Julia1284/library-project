@@ -1,6 +1,7 @@
 package ru.yulialyapushkina.library_project.dto;
 
 
+import com.fasterxml.jackson.annotation.JsonInclude;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -12,6 +13,7 @@ import java.util.List;
 @NoArgsConstructor
 @Data
 @Builder
+@JsonInclude(JsonInclude.Include.NON_NULL)
 public class GenreDto {
     private Long id;
     private String name;

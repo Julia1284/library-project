@@ -1,5 +1,6 @@
 package ru.yulialyapushkina.library_project.dto;
 
+import com.fasterxml.jackson.annotation.JsonInclude;
 import lombok.*;
 
 import java.util.List;
@@ -8,6 +9,7 @@ import java.util.List;
 @NoArgsConstructor
 @Data
 @Builder
+@JsonInclude(JsonInclude.Include.NON_NULL)
 public class BookDto {
     private Long id;
     private String name;
