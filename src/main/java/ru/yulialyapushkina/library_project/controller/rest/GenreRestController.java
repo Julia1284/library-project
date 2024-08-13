@@ -1,4 +1,4 @@
-package ru.yulialyapushkina.library_project.controller;
+package ru.yulialyapushkina.library_project.controller.rest;
 
 
 import lombok.RequiredArgsConstructor;
@@ -10,7 +10,7 @@ import ru.yulialyapushkina.library_project.service.GenreService;
 
 @RestController
 @RequiredArgsConstructor
-public class GenreController {
+public class GenreRestController {
     private final GenreService genreService;
 
     @GetMapping("genre/{id}")
